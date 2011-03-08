@@ -10,6 +10,7 @@ class TagAdmin(admin.ModelAdmin):
     inlines = [
         TaggedItemInline
     ]
+    list_display = ('name', 'slug')
 
 
 admin.site.register(Tag, TagAdmin)
